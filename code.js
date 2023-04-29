@@ -1,9 +1,23 @@
-let BLOCKS_PER_CHART = 16 * 16;
-const containerCell = document.getElementById("containerCell");
+let numberCells = prompt()
+let amountOfCellsXY = numberCells * numberCells
+const scale = (640 / numberCells) - 2
+const containerCell = document.getElementById("containerCell")
 
-for (let i = 1; i <= BLOCKS_PER_CHART; i++) {
-    const newCell = document.createElement("div");
-    newCell.classList.add('cell');
-    containerCell.appendChild(newCell);
+
+function makeField(){
+    
+    for (let i = 1; i <= amountOfCellsXY; i++) {
+        const newCell = document.createElement("div")
+        newCell.classList.add('cell')
+        newCell.setAttribute("id", "oneCell")
+        newCell.style.width = scale + "px"
+        newCell.style.height = scale + "px"
+        containerCell.appendChild(newCell)
+    }
 }
 
+
+makeField()
+console.log(scale)
+console.log(amountOfCellsXY)
+console.log(numberCells)
