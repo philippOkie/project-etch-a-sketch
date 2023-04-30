@@ -1,19 +1,28 @@
-@font-face {
-    font-family: custom-font;
-    src: 
-}
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 
 header {
     background-color: rgb(146, 180, 236);
-    color: rgb(255, 210, 76);
+    color: white;
     width: 100%;
     display: flex;
     align-items: center;
     width: 100%;
+    font-size: larger;
+
+}
+
+button {
+    height: 50px;
+    background-color: rgb(255, 210, 76);
+    color: white;
+    display: flex;
+    border-color: transparent;
+    border-radius: 90px;
+    align-items: center;
 }
 
 body {
-    
+    font-family: 'Sigmar', cursive;
     background-color: rgb(146, 180, 236);
     color: rgb(255 255 255);
     font-weight: 1000;
@@ -24,19 +33,18 @@ body {
     padding: 0;
 }
 
-
 .cell {
     width: 38px;
     height: 38px;
-    background: rgb(240, 240, 240);
-    border: 1px solid black;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(146, 180, 236);
 }
 
 .containerCell {
     width: 640px;
     height: 640px;
     background: rgb(255, 255, 255);
-    border: 1px solid black;
+    border: 1px solid rgb(146, 180, 236);
     display: flex;
     flex-wrap: wrap;
 }
@@ -44,13 +52,13 @@ body {
 .containerButtons {
     width: 160px;
     height: 640px;
-    border: 1px solid black;
+    border: 1px solid rgb(146, 180, 236);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .containerGeneral {
     display: flex;
-    
 }
 
