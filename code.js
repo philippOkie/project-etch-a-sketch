@@ -1,11 +1,13 @@
 let numberCells = prompt()
+if (numberCells > 90){
+    numberCells = prompt("number should be less than 90")
+}
 let amountOfCellsXY = numberCells * numberCells
 const scale = (640 / numberCells) - 2
 const containerCell = document.getElementById("containerCell")
 
 
 function makeField(){
-    
     for (let i = 1; i <= amountOfCellsXY; i++) {
         const newCell = document.createElement("div")
         newCell.classList.add('cell')
@@ -15,7 +17,7 @@ function makeField(){
         containerCell.appendChild(newCell)
     }
 }
-
+  
 
 makeField()
 console.log(scale)
