@@ -8,11 +8,10 @@ header {
     align-items: center;
     width: 100%;
     font-size: larger;
-
 }
 
 button {
-    height: 80px;
+    height: 100px;
     background-color: rgb(255, 210, 76);
     color: white;
     display: flex;
@@ -37,28 +36,25 @@ body {
 }
 
 .cell {
-    width: 48px;
-    height: 48px;
     background: rgb(255, 255, 255);
-    border: 1px solid rgb(146, 180, 236);
 }
 
 .containerCell {
     width: 800px;
     height: 800px;
     background: rgb(255, 255, 255);
-    border: 1px solid rgb(146, 180, 236);
     display: flex;
     flex-wrap: wrap;
 }
 
 .containerButtons {
-    width: 160px;
-    height: 640px;
+    width: 200px;
+    height: 800px;
     border: 1px solid rgb(146, 180, 236);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
 
 .containerGeneral {
@@ -66,3 +62,6 @@ body {
     justify-content: center;
 }
 
+.headerTxt {
+    margin-left: 100px;
+}
