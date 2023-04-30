@@ -12,13 +12,16 @@ header {
 }
 
 button {
-    height: 50px;
+    height: 80px;
     background-color: rgb(255, 210, 76);
     color: white;
     display: flex;
+    font-size: larger;
     border-color: transparent;
-    border-radius: 90px;
+    border-radius: 40px;
     align-items: center;
+    justify-content: center;
+    font-family: 'Sigmar', cursive;
 }
 
 body {
@@ -34,15 +37,15 @@ body {
 }
 
 .cell {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
     background: rgb(255, 255, 255);
     border: 1px solid rgb(146, 180, 236);
 }
 
 .containerCell {
-    width: 640px;
-    height: 640px;
+    width: 800px;
+    height: 800px;
     background: rgb(255, 255, 255);
     border: 1px solid rgb(146, 180, 236);
     display: flex;
@@ -60,5 +63,6 @@ body {
 
 .containerGeneral {
     display: flex;
+    justify-content: center;
 }
 

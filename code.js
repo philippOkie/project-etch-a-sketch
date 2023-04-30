@@ -3,7 +3,7 @@ if (numberCells > 90){
     numberCells = prompt("number should be less than 90")
 }
 let amountOfCellsXY = numberCells * numberCells
-const scale = (640 / numberCells) - 2
+const scale = (800 / numberCells) - 2
 const containerCell = document.getElementById("containerCell")
 
 function makeField(){
