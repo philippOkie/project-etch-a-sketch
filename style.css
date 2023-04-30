@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 header {
     background-color: rgb(146, 180, 236);
@@ -6,6 +6,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
     font-size: larger;
 }
@@ -15,16 +16,16 @@ button {
     background-color: rgb(255, 210, 76);
     color: white;
     display: flex;
-    font-size: larger;
+    font-size: xx-large;
     border-color: transparent;
     border-radius: 40px;
     align-items: center;
     justify-content: center;
-    font-family: 'Sigmar', cursive;
+    font-family: 'Concert One', cursive;
 }
 
 body {
-    font-family: 'Sigmar', cursive;
+    font-family: 'Concert One', cursive;
     background-color: rgb(146, 180, 236);
     color: rgb(255 255 255);
     font-weight: 1000;
@@ -50,7 +51,7 @@ body {
 .containerButtons {
     width: 200px;
     height: 800px;
-    border: 1px solid rgb(146, 180, 236);
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,6 +63,10 @@ body {
     justify-content: center;
 }
 
-.headerTxt {
-    margin-left: 100px;
+.backSketch {
+    border: 50px solid rgb(255, 230, 154);
+    background-color: rgb(255, 230, 154);
+    display: flex;
+    border-radius: 50px;
+
 }
