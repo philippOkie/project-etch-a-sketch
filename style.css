@@ -27,7 +27,17 @@ button {
 button:hover {
     background-color: rgb(255, 210, 76);
     transform: scale(1.1) perspective(1px)
-  }
+}
+
+
+button:active {
+    transform: scale(.9);
+    box-shadow: 0 3px 15px -2px;
+}
+
+div.cell :hover {
+    background-color: rgb(255, 210, 76);
+}
 
 body {
     font-family: 'Luckiest Guy', cursive;
@@ -37,8 +47,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 .cell {
