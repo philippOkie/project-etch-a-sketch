@@ -22,6 +22,7 @@ button {
     align-items: center;
     justify-content: center;
     font-family: 'Luckiest Guy', cursive;
+    transition: 0.5s;
 }
 
 button:hover {
