@@ -54,12 +54,6 @@ function makeField(){
     }
 }
 
-function getScale(numberCells) {
-    let amountOfCellsXY = numberCells * numberCells
-    let scale = (800 / numberCells) 
-    return sale = scale - 1, amountOfCellsXY
-}
-  
 console.log(scale)
 console.log(amountOfCellsXY)
 console.log(numberCells)

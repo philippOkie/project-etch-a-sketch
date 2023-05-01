@@ -30,14 +30,9 @@ button:hover {
     transform: scale(1.1) perspective(1px)
 }
 
-
 button:active {
     transform: scale(.9);
     box-shadow: 0 3px 15px -2px;
-}
-
-div.cell :hover {
-    background-color: rgb(255, 210, 76);
 }
 
 body {
@@ -52,6 +47,11 @@ body {
 
 .cell {
     background: rgb(255, 255, 255);
+}
+
+.cell:hover {
+    background-color: black;
+    transition: 0.2;
 }
 
 .containerCell {
