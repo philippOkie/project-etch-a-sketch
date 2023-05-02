@@ -16,6 +16,9 @@ containerCell.addEventListener('mousedown', () => isDraw = true)
 
 containerCell.addEventListener('mouseup', () => isDraw = false)
 
+alert("Firstly choose the size of the canva!!! it can be BIG, MEDIUM or SMALL!") 
+alert("Also you can choose the you want to paint with(it can be black and a random color)!") 
+
 // function removes old divs 
 function removeDivs() {
     let oldDivs = document.querySelectorAll(".cell")
