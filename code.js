@@ -2,11 +2,14 @@ let numberCells
 let amountOfCellsXY 
 let scale 
 
+let color = "#000000"
 const containerCell = document.getElementById("containerCell")
 const big = document.getElementById("bigButton")
 const mdm = document.getElementById("mdmButton")
 const small = document.getElementById("smallButton")
 const clean = document.getElementById("cleanButton")
+const black = document.getElementById("blackButton")
+const rnbw = document.getElementById("rnbwButton")
 let isDraw = false
 
 containerCell.addEventListener('mousedown', () => isDraw = true)
@@ -21,6 +24,18 @@ function removeDivs() {
         oldDivs[j].parentNode.removeChild(oldDivs[j])
     }
 }
+
+rnbw.addEventListener('click', () => { 
+    let randR = Math.floor(Math.random() * 255) + 1
+    let randG = Math.floor(Math.random() * 255) + 1
+    let randB = Math.floor(Math.random() * 255) + 1
+    
+    color = "rgb(" + randR + ", " + randG + ", " + randB + ")"; 
+})
+
+black.addEventListener('click', () => {
+    color = "#000000"
+})
 
 
 clean.addEventListener('click', () => {
@@ -74,8 +89,9 @@ function makeField(){
 }
 
 function setColor(element) {
-    if (isDraw) element.style.backgroundColor = "black"
+    if (isDraw) element.style.backgroundColor = color
     
     if (!isDraw) element.style.backgroundColor = "none"    
 }
+
 
