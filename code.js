@@ -7,6 +7,11 @@ const big = document.getElementById("bigButton")
 const mdm = document.getElementById("mdmButton")
 const small = document.getElementById("smallButton")
 const clean = document.getElementById("cleanButton")
+let isDraw = false
+
+containerCell.addEventListener('mousedown', () => isDraw = true)
+
+containerCell.addEventListener('mouseup', () => isDraw = false)
 
 // function removes old divs 
 function removeDivs() {
@@ -16,6 +21,7 @@ function removeDivs() {
         oldDivs[j].parentNode.removeChild(oldDivs[j])
     }
 }
+
 
 clean.addEventListener('click', () => {
     removeDivs()
@@ -39,6 +45,8 @@ small.addEventListener('click', () => {
     makeField()
 })
 
+let newCell = document.query
+
 // print the number of cells in the container of cells
 function makeField(){
     amountOfCellsXY = numberCells * numberCells
@@ -52,8 +60,22 @@ function makeField(){
         newCell.style.height = scale + "px"
         containerCell.appendChild(newCell)
     }
+    let cells = document.querySelectorAll('.cell')
+    if (isDraw) {
+        for (let cell of cells) {
+            cell.addEventListener('mouseover', () => setColor(cell))    
+        }
+    }
+    if (!isDraw) {
+        for (let cell of cells) {
+            cell.addEventListener('mouseover', () => setColor(cell))
+        }
+    }
 }
 
-console.log(scale)
-console.log(amountOfCellsXY)
-console.log(numberCells)
+function setColor(element) {
+    if (isDraw) element.style.backgroundColor = "black"
+    
+    if (!isDraw) element.style.backgroundColor = "none"    
+}
+

@@ -49,11 +49,6 @@ body {
     background: rgb(255, 255, 255);
 }
 
-.cell:hover {
-    background-color: black;
-    transition: 0.2;
-}
-
 .containerCell {
     width: 800px;
     height: 800px;
