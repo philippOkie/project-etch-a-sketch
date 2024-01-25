@@ -1,7 +1,3 @@
 # project-etch-a-sketch
 
-Color scheme
-rgb(146, 180, 236)
-rgb(255, 255, 255)
-rgb(255, 230, 154)
-rgb(255, 210, 76)
+![Screenshot from 2024-01-25 13-04-27](https://github.com/philippOkie/project-etch-a-sketch/assets/112265779/1b135093-53e1-4cf6-8301-fb0a62653dc9)
